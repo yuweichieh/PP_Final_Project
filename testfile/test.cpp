@@ -1,3 +1,7 @@
+/***************************************************
+Test passing vector and array using send & receive
+***************************************************/
+
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
