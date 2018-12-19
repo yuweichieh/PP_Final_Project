@@ -1,5 +1,9 @@
 # PP_Final_Project
-
+### 20181219
+- Upload 300k games output file
+	- 300k.out : Raw output
+	- 300k_game.out : Only with gaming average (each line means an avg. of 1000games)
+	- 300k_update.out : Only with updating average (each line means an avg. of 1000games)
 ### 20181215
 - MPI_Datatype testfile test.c upload WCYu
 - MPI vector&array testing pass test.cpp CHYu

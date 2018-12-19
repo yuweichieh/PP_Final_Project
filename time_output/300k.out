@@ -1,0 +1,1207 @@
+TDL2048-Demo
+alpha = 0.1
+total = 300000
+seed = 2022353343
+6-tuple pattern 012345, size = 16777216 (64MB)
+6-tuple pattern 456789, size = 16777216 (64MB)
+6-tuple pattern 012456, size = 16777216 (64MB)
+6-tuple pattern 45689a, size = 16777216 (64MB)
+1000	mean = 4487.09	max = 15204
+	64	100%	128	98.8%	256	84%	512	37%	1024	2.9%average updating time: 0.903ms
+average gaming time  : 27.219ms
+2000	mean = 8002.57	max = 25920
+	64	100%	128	99.9%	256	98.5%	512	78.9%	1024	20.9%	2048	0.2%	(0.2%)
+average updating time: 1.763ms
+average gaming time  : 44.809ms
+3000	mean = 10025.7	max = 27720
+	128	100%	256	98.9%	512	91%	1024	36.1%	2048	1%	(1%)
+average updating time: 2.368ms
+average gaming time  : 53.212ms
+4000	mean = 11097.6	max = 30452
+	128	100%	256	99.6%	512	91.7%	1024	48.7%	2048	2%	(2%)
+average updating time: 2.389ms
+average gaming time  : 55.856ms
+5000	mean = 12255.1	max = 31880
+	128	100%	256	99.7%	512	94.2%	1024	56.9%	2048	4.3%	(4.3%)
+average updating time: 2.605ms
+average gaming time  : 60.003ms
+6000	mean = 13397.8	max = 37448
+	128	100%	256	99.6%	512	94.6%	1024	64.5%	2048	7.2%	(7.2%)
+average updating time: 2.851ms
+average gaming time  : 64.272ms
+7000	mean = 14433.1	max = 37032
+	64	100%	128	99.8%	256	99.5%	512	94.7%	1024	69.3%	2048	10.6%	(10.6%)
+average updating time: 3.025ms
+average gaming time  : 67.527ms
+8000	mean = 15215.4	max = 36572
+	128	100%	256	99.7%	512	96.3%	1024	72.7%	2048	12.8%	(12.8%)
+average updating time: 3.145ms
+average gaming time  : 69.864ms
+9000	mean = 16261.5	max = 38356
+	64	100%	256	99.9%	512	96.8%	1024	76.1%	2048	16.1%	(16.1%)
+average updating time: 3.392ms
+average gaming time  : 73.638ms
+10000	mean = 17453.9	max = 60904
+	128	100%	256	99.9%	512	97.2%	1024	78.8%	2048	19.6%	(19.3%)
+	4096	0.3%average updating time: 3.648ms
+average gaming time  : 77.851ms
+11000	mean = 18275.1	max = 54772
+	128	100%	256	99.9%	512	97%	1024	82.2%	2048	23%	(22.8%)
+	4096	0.2%average updating time: 3.818ms
+average gaming time  : 80.69ms
+12000	mean = 19147.2	max = 61684
+	32	100%	128	99.9%	256	99.7%	512	97.6%	1024	84.1%	2048	26.5%	(25.8%)
+	4096	0.7%average updating time: 3.929ms
+average gaming time  : 82.582ms
+13000	mean = 20161	max = 60600
+	128	100%	256	99.9%	512	97%	1024	84.4%	2048	30%	(28.7%)
+	4096	1.3%average updating time: 4.127ms
+average gaming time  : 85.649ms
+14000	mean = 20235.9	max = 59460
+	128	100%	256	99.7%	512	97.1%	1024	83.8%	2048	31.5%	(30.5%)
+	4096	1%average updating time: 4.162ms
+average gaming time  : 85.464ms
+15000	mean = 21232.7	max = 60380
+	256	100%	512	98%	1024	87.1%	2048	32.4%	(30.4%)
+	4096	2%average updating time: 4.331ms
+average gaming time  : 88.752ms
+16000	mean = 22080.4	max = 62000
+	32	100%	128	99.9%	256	99.6%	512	97.6%	1024	87.2%	2048	38.4%	(36.9%)
+	4096	1.5%average updating time: 4.475ms
+average gaming time  : 91.157ms
+17000	mean = 22245.1	max = 66772
+	128	100%	256	99.8%	512	98%	1024	88.2%	2048	38.5%	(36.5%)
+	4096	2%average updating time: 4.508ms
+average gaming time  : 91.624ms
+18000	mean = 23627.5	max = 68580
+	256	100%	512	98.5%	1024	88.9%	2048	42.9%	(38.9%)
+	4096	4%average updating time: 4.716ms
+average gaming time  : 95.034ms
+19000	mean = 24357.9	max = 70632
+	128	100%	256	99.9%	512	98.6%	1024	90.3%	2048	45.4%	(40.6%)
+	4096	4.8%average updating time: 4.887ms
+average gaming time  : 97.876ms
+20000	mean = 23675.3	max = 72016
+	128	100%	256	99.5%	512	98.1%	1024	87.7%	2048	44.4%	(40.7%)
+	4096	3.7%average updating time: 4.757ms
+average gaming time  : 95.362ms
+21000	mean = 25088.5	max = 69468
+	64	100%	128	99.8%	256	99.6%	512	98.1%	1024	91.1%	2048	47.4%	(42.7%)
+	4096	4.7%average updating time: 5.009ms
+average gaming time  : 99.83ms
+22000	mean = 25366.8	max = 70724
+	128	100%	256	99.8%	512	97.8%	1024	88.6%	2048	50.6%	(45.8%)
+	4096	4.8%average updating time: 5.048ms
+average gaming time  : 100.035ms
+23000	mean = 26248.7	max = 77884
+	128	100%	256	99.9%	512	98.6%	1024	90.6%	2048	53%	(47.3%)
+	4096	5.7%average updating time: 5.212ms
+average gaming time  : 102.741ms
+24000	mean = 27031.5	max = 79164
+	128	100%	256	99.8%	512	98%	1024	92.2%	2048	56.7%	(50.5%)
+	4096	6.2%average updating time: 5.353ms
+average gaming time  : 104.859ms
+25000	mean = 28097	max = 80936
+	128	100%	256	99.8%	512	97.8%	1024	91.3%	2048	57.5%	(48.3%)
+	4096	9.2%average updating time: 5.567ms
+average gaming time  : 108.468ms
+26000	mean = 28228.1	max = 79704
+	128	100%	256	99.7%	512	98.4%	1024	91.5%	2048	57.5%	(47.9%)
+	4096	9.6%average updating time: 5.491ms
+average gaming time  : 107.696ms
+27000	mean = 28816.3	max = 78976
+	64	100%	128	99.8%	256	99.5%	512	98.4%	1024	91.9%	2048	59.1%	(49.6%)
+	4096	9.5%average updating time: 5.677ms
+average gaming time  : 110.002ms
+28000	mean = 29707.7	max = 76092
+	32	100%	128	99.9%	256	99.7%	512	98.4%	1024	92%	2048	61.6%	(50.7%)
+	4096	10.9%average updating time: 5.804ms
+average gaming time  : 112.603ms
+29000	mean = 30033.6	max = 81924
+	64	100%	128	99.9%	256	99.8%	512	97.7%	1024	90.7%	2048	60.8%	(48.6%)
+	4096	12.2%average updating time: 5.841ms
+average gaming time  : 112.81ms
+30000	mean = 30526.2	max = 82892
+	128	100%	256	99.8%	512	98.3%	1024	91.1%	2048	63.1%	(50.1%)
+	4096	13%average updating time: 5.923ms
+average gaming time  : 114.525ms
+31000	mean = 31094.5	max = 99112
+	32	100%	64	99.8%	128	99.7%	256	99.5%	512	98.4%	1024	90.8%	2048	64.1%	(50%)
+	4096	14.1%	8192	0.1%average updating time: 6.066ms
+average gaming time  : 116.122ms
+32000	mean = 31360.1	max = 112756
+	128	100%	256	99.9%	512	98.5%	1024	93%	2048	63.4%	(49.6%)
+	4096	13.8%	8192	0.1%average updating time: 6.132ms
+average gaming time  : 117.326ms
+33000	mean = 31606.5	max = 78864
+	128	100%	256	99.7%	512	98.5%	1024	91.2%	2048	64.2%	(49.4%)
+	4096	14.8%average updating time: 6.144ms
+average gaming time  : 117.25ms
+34000	mean = 31883.1	max = 104344
+	128	100%	256	99.8%	512	98.3%	1024	92.3%	2048	63.6%	(47.5%)
+	4096	16.1%	8192	0.1%average updating time: 6.154ms
+average gaming time  : 117.925ms
+35000	mean = 32922	max = 106560
+	64	100%	256	99.9%	512	98.7%	1024	93.4%	2048	68.9%	(53.7%)
+	4096	15.2%	8192	0.1%average updating time: 6.387ms
+average gaming time  : 121.379ms
+36000	mean = 34084.1	max = 106652
+	128	100%	256	99.9%	512	98.4%	1024	93.5%	2048	68.6%	(49.5%)
+	4096	19.1%	8192	0.2%average updating time: 6.644ms
+average gaming time  : 124.418ms
+37000	mean = 33617.6	max = 120936
+	64	100%	128	99.9%	256	99.5%	512	97.9%	1024	93%	2048	67.5%	(49%)
+	4096	18.5%	8192	0.1%average updating time: 6.514ms
+average gaming time  : 123.024ms
+38000	mean = 34836.4	max = 122388
+	256	100%	512	98.7%	1024	92.7%	2048	69.1%	(47.8%)
+	4096	21.3%	8192	0.1%average updating time: 6.691ms
+average gaming time  : 126.284ms
+39000	mean = 34723.5	max = 94480
+	128	100%	256	99.6%	512	98.8%	1024	94.8%	2048	71.6%	(52.5%)
+	4096	19.1%average updating time: 6.718ms
+average gaming time  : 126.396ms
+40000	mean = 35546	max = 132984
+	128	100%	256	99.9%	512	99%	1024	94.3%	2048	70.6%	(49.1%)
+	4096	21.5%	8192	0.1%average updating time: 6.88ms
+average gaming time  : 128.218ms
+41000	mean = 35668.5	max = 109588
+	256	100%	512	99%	1024	94.1%	2048	70.1%	(47.6%)
+	4096	22.5%	8192	0.3%average updating time: 6.907ms
+average gaming time  : 128.915ms
+42000	mean = 37615.6	max = 106664
+	64	100%	128	99.9%	256	99.8%	512	99.1%	1024	94.4%	2048	73.6%	(48.1%)
+	4096	25.5%	8192	0.3%average updating time: 7.185ms
+average gaming time  : 133.691ms
+43000	mean = 36877	max = 126284
+	64	100%	128	99.9%	256	99.7%	512	98.6%	1024	94.8%	2048	72.6%	(49.6%)
+	4096	23%	8192	0.2%average updating time: 7.099ms
+average gaming time  : 132.258ms
+44000	mean = 37409.4	max = 116100
+	128	100%	256	99.9%	512	98.5%	1024	93.2%	2048	74.9%	(50.5%)
+	4096	24.4%	8192	0.2%average updating time: 7.187ms
+average gaming time  : 133.172ms
+45000	mean = 38446	max = 125052
+	64	100%	128	99.8%	256	99.7%	512	98.4%	1024	94.1%	2048	74.9%	(47.2%)
+	4096	27.7%	8192	0.6%average updating time: 7.316ms
+average gaming time  : 135.53ms
+46000	mean = 38497.7	max = 132280
+	128	100%	256	99.7%	512	98.4%	1024	94.3%	2048	74%	(45.6%)
+	4096	28.4%	8192	0.3%average updating time: 7.351ms
+average gaming time  : 135.751ms
+47000	mean = 38245.5	max = 127552
+	128	100%	256	99.9%	512	99.4%	1024	95%	2048	75.4%	(48.2%)
+	4096	27.2%	8192	0.3%average updating time: 7.305ms
+average gaming time  : 135.225ms
+48000	mean = 39150	max = 119908
+	64	100%	128	99.9%	256	99.8%	512	98.7%	1024	93.9%	2048	73.7%	(43.9%)
+	4096	29.8%	8192	0.4%average updating time: 7.49ms
+average gaming time  : 137.6ms
+49000	mean = 39489	max = 126984
+	256	100%	512	99%	1024	96%	2048	75.3%	(46.3%)
+	4096	29%	8192	0.6%average updating time: 7.509ms
+average gaming time  : 138.152ms
+50000	mean = 39532.8	max = 122148
+	64	100%	128	99.7%	256	99.4%	512	98.2%	1024	94.1%	2048	75.5%	(46.6%)
+	4096	28.9%	8192	0.6%average updating time: 7.533ms
+average gaming time  : 138.52ms
+51000	mean = 39684.2	max = 121120
+	128	100%	256	99.8%	512	98.7%	1024	94.6%	2048	74.8%	(45.9%)
+	4096	28.9%	8192	1%average updating time: 7.561ms
+average gaming time  : 138.572ms
+52000	mean = 40021.8	max = 123748
+	32	100%	64	99.8%	128	99.7%	256	99.5%	512	98.1%	1024	93.6%	2048	76.9%	(45.9%)
+	4096	31%	8192	0.1%average updating time: 7.592ms
+average gaming time  : 138.541ms
+53000	mean = 41661.9	max = 139732
+	256	100%	512	98.8%	1024	94.8%	2048	78.2%	(43.7%)
+	4096	34.5%	8192	0.7%average updating time: 7.883ms
+average gaming time  : 143.284ms
+54000	mean = 42134.2	max = 128860
+	32	100%	128	99.8%	256	99.5%	512	99%	1024	94.7%	2048	76.2%	(40.4%)
+	4096	35.8%	8192	0.8%average updating time: 8.009ms
+average gaming time  : 145.072ms
+55000	mean = 41051.3	max = 131364
+	128	100%	256	99.9%	512	98.9%	1024	93.8%	2048	76.5%	(42.9%)
+	4096	33.6%	8192	0.6%average updating time: 7.804ms
+average gaming time  : 141.867ms
+56000	mean = 41802.5	max = 125060
+	128	100%	256	99.8%	512	98.7%	1024	95.2%	2048	76.8%	(41.7%)
+	4096	35.1%	8192	0.9%average updating time: 7.88ms
+average gaming time  : 143.581ms
+57000	mean = 42627.5	max = 126660
+	128	100%	256	99.8%	512	98.8%	1024	95.4%	2048	77%	(39.4%)
+	4096	37.6%	8192	0.6%average updating time: 8.092ms
+average gaming time  : 146.604ms
+58000	mean = 42512.7	max = 128248
+	32	100%	64	99.9%	128	99.8%	256	99.7%	512	98.7%	1024	94.4%	2048	77%	(39.8%)
+	4096	37.2%	8192	0.4%average updating time: 8.111ms
+average gaming time  : 146.561ms
+59000	mean = 43161	max = 120648
+	64	100%	128	99.9%	256	99.7%	512	98.5%	1024	94.9%	2048	78.3%	(40.4%)
+	4096	37.9%	8192	0.7%average updating time: 8.22ms
+average gaming time  : 148.136ms
+60000	mean = 44471.6	max = 132332
+	128	100%	256	99.8%	512	99.1%	1024	94.7%	2048	80.2%	(39.8%)
+	4096	40.4%	8192	0.8%average updating time: 8.384ms
+average gaming time  : 150.769ms
+61000	mean = 44271.2	max = 122420
+	64	100%	128	99.8%	256	99.5%	512	98.4%	1024	95.6%	2048	78%	(37.8%)
+	4096	40.2%	8192	0.7%average updating time: 8.386ms
+average gaming time  : 150.901ms
+62000	mean = 43489	max = 154896
+	32	100%	256	99.9%	512	98.9%	1024	94.1%	2048	78.5%	(39.3%)
+	4096	39.2%	8192	0.6%average updating time: 8.176ms
+average gaming time  : 147.449ms
+63000	mean = 45865.5	max = 128212
+	128	100%	256	99.8%	512	98.7%	1024	95.9%	2048	80.9%	(38.7%)
+	4096	42.2%	8192	1.2%average updating time: 8.691ms
+average gaming time  : 155.424ms
+64000	mean = 45345.8	max = 137204
+	32	100%	128	99.9%	256	99.7%	512	98.4%	1024	95%	2048	80.5%	(38.2%)
+	4096	42.3%	8192	1%average updating time: 8.526ms
+average gaming time  : 152.881ms
+65000	mean = 46022.3	max = 138192
+	128	100%	256	99.6%	512	98.9%	1024	94.9%	2048	80%	(35.6%)
+	4096	44.4%	8192	1.3%average updating time: 8.659ms
+average gaming time  : 155.25ms
+66000	mean = 45573	max = 124192
+	128	100%	256	99.9%	512	99.6%	1024	95.3%	2048	79.7%	(35.3%)
+	4096	44.4%	8192	0.6%average updating time: 8.586ms
+average gaming time  : 154.192ms
+67000	mean = 46320.2	max = 132916
+	32	100%	64	99.9%	128	99.8%	256	99.5%	512	98.5%	1024	94.7%	2048	80.4%	(34.9%)
+	4096	45.5%	8192	0.8%average updating time: 8.676ms
+average gaming time  : 155.768ms
+68000	mean = 47684.2	max = 131652
+	64	100%	128	99.8%	256	99.6%	512	98.8%	1024	95.3%	2048	82.1%	(35.7%)
+	4096	46.4%	8192	1.3%average updating time: 8.968ms
+average gaming time  : 160.446ms
+69000	mean = 46963.5	max = 143612
+	64	100%	256	99.9%	512	98.9%	1024	94.3%	2048	79.6%	(34.1%)
+	4096	45.5%	8192	1.5%average updating time: 8.913ms
+average gaming time  : 159.101ms
+70000	mean = 47631.7	max = 139952
+	128	100%	256	99.8%	512	99.4%	1024	96.5%	2048	81.3%	(35%)
+	4096	46.3%	8192	1.1%average updating time: 9.194ms
+average gaming time  : 163.595ms
+71000	mean = 46213.1	max = 150356
+	64	100%	128	99.8%	256	99.5%	512	98.7%	1024	94.2%	2048	78.1%	(32.2%)
+	4096	45.9%	8192	0.8%average updating time: 8.797ms
+average gaming time  : 157.138ms
+72000	mean = 48157.5	max = 142852
+	64	100%	128	99.7%	256	99.2%	512	98.3%	1024	95.5%	2048	82.2%	(34.2%)
+	4096	48%	8192	1.6%average updating time: 9.072ms
+average gaming time  : 161.556ms
+73000	mean = 48023.7	max = 139672
+	256	100%	512	99.3%	1024	96.2%	2048	81.3%	(33.2%)
+	4096	48.1%	8192	1.9%average updating time: 9.001ms
+average gaming time  : 160.667ms
+74000	mean = 47469.6	max = 132940
+	32	100%	64	99.9%	128	99.8%	256	99.5%	512	99%	1024	95%	2048	81.1%	(34.9%)
+	4096	46.2%	8192	1.4%average updating time: 9.034ms
+average gaming time  : 159.551ms
+75000	mean = 48695.7	max = 171784
+	64	100%	128	99.9%	256	99.8%	512	98.5%	1024	94.8%	2048	79.9%	(30.9%)
+	4096	49%	8192	1.8%average updating time: 9.187ms
+average gaming time  : 162.406ms
+76000	mean = 49762.6	max = 131300
+	32	100%	128	99.9%	256	99.7%	512	98.7%	1024	94.8%	2048	83.2%	(32.8%)
+	4096	50.4%	8192	2.2%average updating time: 9.255ms
+average gaming time  : 164.168ms
+77000	mean = 48154	max = 135932
+	64	100%	128	99.8%	256	99.5%	512	98.9%	1024	95.2%	2048	82.2%	(34%)
+	4096	48.2%	8192	1.2%average updating time: 9.026ms
+average gaming time  : 161.097ms
+78000	mean = 49347.6	max = 148968
+	128	100%	256	99.8%	512	98.9%	1024	95.9%	2048	82.1%	(32.4%)
+	4096	49.7%	8192	2.1%average updating time: 9.264ms
+average gaming time  : 164.195ms
+79000	mean = 48903.7	max = 139292
+	128	100%	256	99.9%	512	98.8%	1024	95.9%	2048	80.9%	(31.2%)
+	4096	49.7%	8192	1.8%average updating time: 9.21ms
+average gaming time  : 163.751ms
+80000	mean = 50326.3	max = 143124
+	256	100%	512	99.4%	1024	96.8%	2048	82.8%	(30.7%)
+	4096	52.1%	8192	1.6%average updating time: 9.426ms
+average gaming time  : 167.273ms
+81000	mean = 49845.3	max = 133532
+	32	100%	64	99.8%	128	99.7%	256	99.1%	512	98.5%	1024	96%	2048	81.6%	(30.3%)
+	4096	51.3%	8192	2.3%average updating time: 9.322ms
+average gaming time  : 165.454ms
+82000	mean = 50419.1	max = 144264
+	128	100%	256	99.8%	512	99.1%	1024	96.8%	2048	84.3%	(33.8%)
+	4096	50.5%	8192	1.7%average updating time: 9.467ms
+average gaming time  : 167.874ms
+83000	mean = 49906.8	max = 133764
+	64	100%	128	99.8%	256	99.7%	512	99%	1024	95.7%	2048	81.4%	(29.9%)
+	4096	51.5%	8192	1.9%average updating time: 9.38ms
+average gaming time  : 165.993ms
+84000	mean = 50205.4	max = 148324
+	256	100%	512	99.5%	1024	97.1%	2048	83.5%	(32.1%)
+	4096	51.4%	8192	1.5%average updating time: 9.486ms
+average gaming time  : 168.491ms
+85000	mean = 51222.7	max = 135312
+	256	100%	512	99.4%	1024	95.9%	2048	83.8%	(30.4%)
+	4096	53.4%	8192	1.8%average updating time: 9.738ms
+average gaming time  : 171.342ms
+86000	mean = 50550.1	max = 158088
+	64	100%	128	99.7%	256	99.5%	512	98.9%	1024	95.6%	2048	82.6%	(31.9%)
+	4096	50.7%	8192	2.3%average updating time: 9.491ms
+average gaming time  : 167.644ms
+87000	mean = 50854.5	max = 149248
+	64	100%	128	99.9%	256	99.6%	512	99%	1024	96%	2048	81.7%	(30.5%)
+	4096	51.2%	8192	3.7%average updating time: 9.55ms
+average gaming time  : 168.115ms
+88000	mean = 51725.1	max = 138844
+	128	100%	256	99.9%	512	99.3%	1024	96.8%	2048	83%	(30.1%)
+	4096	52.9%	8192	2.6%average updating time: 9.766ms
+average gaming time  : 171.82ms
+89000	mean = 52623.5	max = 156460
+	64	100%	128	99.7%	256	99.6%	512	99.2%	1024	96.8%	2048	83.8%	(27.9%)
+	4096	55.9%	8192	2.2%average updating time: 9.868ms
+average gaming time  : 173.218ms
+90000	mean = 50721.8	max = 158324
+	64	100%	128	99.8%	256	99.5%	512	98.9%	1024	96.6%	2048	81.7%	(29.9%)
+	4096	51.8%	8192	2.7%average updating time: 9.553ms
+average gaming time  : 168.255ms
+91000	mean = 53526.5	max = 147136
+	64	100%	128	99.9%	256	99.8%	512	99.2%	1024	96.4%	2048	84.7%	(29.2%)
+	4096	55.5%	8192	4.1%average updating time: 9.912ms
+average gaming time  : 174.323ms
+92000	mean = 51129.6	max = 145936
+	32	100%	128	99.9%	256	99.7%	512	98.9%	1024	96.8%	2048	83.1%	(31.2%)
+	4096	51.9%	8192	2.5%average updating time: 9.543ms
+average gaming time  : 168.122ms
+93000	mean = 52192.6	max = 163808
+	128	100%	256	99.8%	512	99%	1024	96%	2048	82.9%	(29.7%)
+	4096	53.2%	8192	3.4%average updating time: 9.744ms
+average gaming time  : 170.829ms
+94000	mean = 51850	max = 135620
+	64	100%	128	99.9%	256	99.8%	512	98.9%	1024	95.8%	2048	83.4%	(29.4%)
+	4096	54%	8192	2.7%average updating time: 9.693ms
+average gaming time  : 170.513ms
+95000	mean = 53022.4	max = 157516
+	128	100%	256	99.9%	512	98.9%	1024	96.7%	2048	84.5%	(29.7%)
+	4096	54.8%	8192	3.4%average updating time: 9.809ms
+average gaming time  : 172.823ms
+96000	mean = 53381.4	max = 145692
+	256	100%	512	99.2%	1024	96.2%	2048	83.4%	(28.3%)
+	4096	55.1%	8192	4%average updating time: 9.873ms
+average gaming time  : 173.94ms
+97000	mean = 53449.9	max = 161124
+	64	100%	256	99.9%	512	99%	1024	95.9%	2048	83.7%	(27.2%)
+	4096	56.5%	8192	4.1%average updating time: 9.988ms
+average gaming time  : 175.408ms
+98000	mean = 54130.8	max = 163984
+	128	100%	256	99.8%	512	99.2%	1024	96.8%	2048	85.2%	(28.3%)
+	4096	56.9%	8192	3.7%average updating time: 10.16ms
+average gaming time  : 178.09ms
+99000	mean = 52978.8	max = 137288
+	256	100%	512	99.6%	1024	96.5%	2048	84.2%	(30.5%)
+	4096	53.7%	8192	3.5%average updating time: 9.87ms
+average gaming time  : 173.425ms
+100000	mean = 53608	max = 159964
+	32	100%	64	99.9%	128	99.7%	256	99.6%	512	98.6%	1024	96.2%	2048	83.7%	(28.4%)
+	4096	55.3%	8192	5.1%average updating time: 10.162ms
+average gaming time  : 178.924ms
+101000	mean = 52792.3	max = 157556
+	256	100%	512	99.2%	1024	96.1%	2048	83.1%	(29%)
+	4096	54.1%	8192	4%average updating time: 9.882ms
+average gaming time  : 173.623ms
+102000	mean = 53626	max = 169684
+	256	100%	512	99%	1024	96%	2048	83.1%	(27.9%)
+	4096	55.2%	8192	4.1%average updating time: 9.912ms
+average gaming time  : 174.339ms
+103000	mean = 52921.3	max = 159604
+	128	100%	256	99.7%	512	98.9%	1024	95.7%	2048	83.7%	(29.6%)
+	4096	54.1%	8192	3.2%average updating time: 9.834ms
+average gaming time  : 172.767ms
+104000	mean = 53269.4	max = 155612
+	64	100%	256	99.9%	512	99.4%	1024	97.1%	2048	84.5%	(30.6%)
+	4096	53.9%	8192	3.3%average updating time: 9.954ms
+average gaming time  : 174.937ms
+105000	mean = 55128.3	max = 166004
+	128	100%	256	99.7%	512	98.7%	1024	95.7%	2048	83.3%	(27.1%)
+	4096	56.2%	8192	6.1%average updating time: 10.177ms
+average gaming time  : 178.4ms
+106000	mean = 55422.7	max = 164148
+	16	100%	128	99.9%	256	99.8%	512	98.9%	1024	97%	2048	87%	(29.8%)
+	4096	57.2%	8192	4.7%average updating time: 10.191ms
+average gaming time  : 178.73ms
+107000	mean = 54052.9	max = 142412
+	128	100%	256	99.9%	512	99.1%	1024	97.4%	2048	84.5%	(29.3%)
+	4096	55.2%	8192	4.2%average updating time: 9.979ms
+average gaming time  : 175.44ms
+108000	mean = 56619.4	max = 157952
+	64	100%	128	99.9%	256	99.7%	512	99.1%	1024	96.3%	2048	85.7%	(26.1%)
+	4096	59.6%	8192	5.5%average updating time: 10.419ms
+average gaming time  : 182.964ms
+109000	mean = 56249.2	max = 148124
+	256	100%	512	99.3%	1024	96%	2048	85.4%	(27.3%)
+	4096	58.1%	8192	5.8%average updating time: 10.382ms
+average gaming time  : 181.947ms
+110000	mean = 54831.5	max = 168532
+	128	100%	256	99.8%	512	99.1%	1024	96.2%	2048	84.7%	(26.9%)
+	4096	57.8%	8192	3.7%average updating time: 10.19ms
+average gaming time  : 178.259ms
+111000	mean = 55902.7	max = 159568
+	64	100%	256	99.9%	512	99.1%	1024	97.5%	2048	85.6%	(26.3%)
+	4096	59.3%	8192	4.8%average updating time: 10.476ms
+average gaming time  : 183.041ms
+112000	mean = 56796	max = 168484
+	32	100%	64	99.9%	256	99.8%	512	99.4%	1024	97.2%	2048	85.4%	(26.7%)
+	4096	58.7%	8192	6.7%average updating time: 10.508ms
+average gaming time  : 183.725ms
+113000	mean = 54867.3	max = 157728
+	64	100%	128	99.9%	256	99.8%	512	99.1%	1024	96.3%	2048	84.1%	(26.5%)
+	4096	57.6%	8192	4.6%average updating time: 10.143ms
+average gaming time  : 177.487ms
+114000	mean = 55921.2	max = 171152
+	64	100%	128	99.9%	256	99.8%	512	98.8%	1024	96.3%	2048	85%	(26.7%)
+	4096	58.3%	8192	5.8%average updating time: 10.407ms
+average gaming time  : 182.069ms
+115000	mean = 56632.8	max = 157248
+	32	100%	256	99.9%	512	99.5%	1024	96.7%	2048	85.8%	(26.1%)
+	4096	59.7%	8192	5.5%average updating time: 10.601ms
+average gaming time  : 185.348ms
+116000	mean = 55465.6	max = 156224
+	64	100%	128	99.8%	256	99.6%	512	99.2%	1024	96.9%	2048	84.2%	(26.2%)
+	4096	58%	8192	5.3%average updating time: 10.454ms
+average gaming time  : 183.094ms
+117000	mean = 54747.5	max = 157852
+	32	100%	256	99.9%	512	99%	1024	96.6%	2048	84%	(29.2%)
+	4096	54.8%	8192	4.8%average updating time: 10.321ms
+average gaming time  : 178.433ms
+118000	mean = 55578.8	max = 167556
+	64	100%	128	99.9%	256	99.5%	512	98.6%	1024	95.8%	2048	85.1%	(28%)
+	4096	57.1%	8192	5.2%average updating time: 10.36ms
+average gaming time  : 180.46ms
+119000	mean = 57643.6	max = 170072
+	32	100%	128	99.9%	256	99.7%	512	99.3%	1024	97.5%	2048	88.2%	(27.5%)
+	4096	60.7%	8192	5.8%average updating time: 10.826ms
+average gaming time  : 188.96ms
+120000	mean = 56910.1	max = 168132
+	32	100%	64	99.8%	256	99.7%	512	98.8%	1024	97%	2048	85.2%	(26%)
+	4096	59.2%	8192	5.9%average updating time: 10.57ms
+average gaming time  : 184.56ms
+121000	mean = 56621.8	max = 168016
+	256	100%	512	99.5%	1024	97.2%	2048	86%	(27.2%)
+	4096	58.8%	8192	5.8%average updating time: 10.363ms
+average gaming time  : 180.853ms
+122000	mean = 56014.9	max = 145816
+	64	100%	128	99.9%	256	99.6%	512	99.1%	1024	96.9%	2048	84.2%	(25.1%)
+	4096	59.1%	8192	5.9%average updating time: 10.393ms
+average gaming time  : 180.672ms
+123000	mean = 58362	max = 169844
+	128	100%	256	99.9%	512	98.9%	1024	96.4%	2048	85.2%	(24.2%)
+	4096	61%	8192	7.1%average updating time: 10.776ms
+average gaming time  : 186.743ms
+124000	mean = 56663.2	max = 169040
+	128	100%	256	99.8%	512	99.7%	1024	97.4%	2048	85%	(24.5%)
+	4096	60.5%	8192	4.8%average updating time: 10.602ms
+average gaming time  : 182.187ms
+125000	mean = 56956.2	max = 176360
+	128	100%	256	99.7%	512	99%	1024	96.6%	2048	85%	(25%)
+	4096	60%	8192	5.9%average updating time: 10.448ms
+average gaming time  : 182.142ms
+126000	mean = 58025.2	max = 158884
+	256	100%	512	99.8%	1024	96.3%	2048	85.4%	(24.2%)
+	4096	61.2%	8192	7.4%average updating time: 10.64ms
+average gaming time  : 185.225ms
+127000	mean = 57904.9	max = 153432
+	64	100%	128	99.9%	256	99.8%	512	98.9%	1024	96.3%	2048	84.3%	(23.4%)
+	4096	60.9%	8192	6.4%average updating time: 10.646ms
+average gaming time  : 185.272ms
+128000	mean = 57309.8	max = 167936
+	128	100%	256	99.8%	512	99.4%	1024	97%	2048	84.5%	(23.5%)
+	4096	61%	8192	6%average updating time: 10.529ms
+average gaming time  : 183.812ms
+129000	mean = 58934.4	max = 154952
+	64	100%	128	99.9%	256	99.6%	512	98.8%	1024	96.5%	2048	86.3%	(25.1%)
+	4096	61.2%	8192	7.2%average updating time: 10.916ms
+average gaming time  : 189.218ms
+130000	mean = 58421.9	max = 170544
+	64	100%	256	99.8%	512	99%	1024	96%	2048	85.1%	(24.9%)
+	4096	60.2%	8192	8.3%average updating time: 10.62ms
+average gaming time  : 185.185ms
+131000	mean = 58412.2	max = 169932
+	32	100%	64	99.9%	128	99.8%	256	99.7%	512	98.8%	1024	96.8%	2048	85.6%	(24.4%)
+	4096	61.2%	8192	7.2%average updating time: 10.667ms
+average gaming time  : 185.553ms
+132000	mean = 58917.3	max = 155148
+	64	100%	256	99.9%	512	99.4%	1024	97.6%	2048	86.4%	(24%)
+	4096	62.4%	8192	7.3%average updating time: 10.776ms
+average gaming time  : 187.457ms
+133000	mean = 59867.3	max = 157912
+	32	100%	128	99.9%	256	99.8%	512	99%	1024	96.8%	2048	86.3%	(22.3%)
+	4096	64%	8192	7.8%average updating time: 10.888ms
+average gaming time  : 189.584ms
+134000	mean = 59766	max = 153472
+	64	100%	128	99.9%	256	99.8%	512	98.9%	1024	97.5%	2048	86.5%	(25.3%)
+	4096	61.2%	8192	9.2%average updating time: 10.879ms
+average gaming time  : 188.954ms
+135000	mean = 59756.5	max = 160376
+	32	100%	256	99.9%	512	99.5%	1024	96.8%	2048	85.8%	(22.9%)
+	4096	62.9%	8192	8.9%average updating time: 10.847ms
+average gaming time  : 188.428ms
+136000	mean = 58500.6	max = 160408
+	128	100%	256	99.8%	512	99.3%	1024	97.3%	2048	85.2%	(24.3%)
+	4096	60.9%	8192	6.5%average updating time: 10.687ms
+average gaming time  : 185.46ms
+137000	mean = 60002.2	max = 168000
+	64	100%	128	99.9%	256	99.7%	512	99.4%	1024	97.1%	2048	86.5%	(22.4%)
+	4096	64.1%	8192	7.2%average updating time: 10.914ms
+average gaming time  : 189.314ms
+138000	mean = 60449.1	max = 157488
+	32	100%	64	99.9%	128	99.8%	256	99.7%	512	99.4%	1024	97.5%	2048	86%	(23.2%)
+	4096	62.8%	8192	9.4%average updating time: 10.987ms
+average gaming time  : 190.035ms
+139000	mean = 61411.6	max = 168872
+	32	100%	128	99.8%	512	99.7%	1024	98%	2048	87.8%	(24%)
+	4096	63.8%	8192	9.6%average updating time: 11.078ms
+average gaming time  : 192.026ms
+140000	mean = 58986.3	max = 169852
+	64	100%	128	99.9%	256	99.8%	512	99.1%	1024	96.2%	2048	85.8%	(23.6%)
+	4096	62.2%	8192	7.6%average updating time: 10.911ms
+average gaming time  : 188.485ms
+141000	mean = 60367.3	max = 168760
+	128	100%	256	99.9%	512	99.4%	1024	96.9%	2048	86.1%	(22.5%)
+	4096	63.6%	8192	8.2%average updating time: 11.065ms
+average gaming time  : 192.091ms
+142000	mean = 60340.4	max = 167152
+	128	100%	256	99.8%	512	99.4%	1024	97%	2048	86.5%	(23.8%)
+	4096	62.7%	8192	9.3%average updating time: 11.044ms
+average gaming time  : 191.417ms
+143000	mean = 60361.1	max = 167484
+	128	100%	256	99.8%	512	99.5%	1024	97.6%	2048	87.9%	(25.5%)
+	4096	62.4%	8192	8.8%average updating time: 11.025ms
+average gaming time  : 189.465ms
+144000	mean = 60924.4	max = 164456
+	64	100%	128	99.8%	256	99.7%	512	99.3%	1024	97.2%	2048	86.4%	(23.4%)
+	4096	63%	8192	9.4%average updating time: 11.147ms
+average gaming time  : 191.666ms
+145000	mean = 60951.6	max = 157760
+	64	100%	256	99.9%	512	99.3%	1024	97%	2048	86.9%	(24%)
+	4096	62.9%	8192	10.8%average updating time: 11.303ms
+average gaming time  : 192.215ms
+146000	mean = 60395.9	max = 155316
+	64	100%	128	99.8%	256	99.7%	512	99.1%	1024	95.8%	2048	84.4%	(23.2%)
+	4096	61.2%	8192	10.7%average updating time: 11.131ms
+average gaming time  : 190.106ms
+147000	mean = 61492.5	max = 175204
+	64	100%	256	99.9%	512	99.2%	1024	97.7%	2048	88.1%	(24%)
+	4096	64.1%	8192	9.2%average updating time: 11.635ms
+average gaming time  : 199.956ms
+148000	mean = 62080.3	max = 157812
+	64	100%	256	99.8%	512	99%	1024	96.9%	2048	87.8%	(24.9%)
+	4096	62.9%	8192	11.9%average updating time: 11.649ms
+average gaming time  : 200.808ms
+149000	mean = 61637.4	max = 173472
+	64	100%	256	99.9%	512	99.6%	1024	97.6%	2048	87%	(24.4%)
+	4096	62.6%	8192	10.9%average updating time: 11.568ms
+average gaming time  : 199.255ms
+150000	mean = 61515	max = 171292
+	128	100%	256	99.9%	512	99.4%	1024	96.8%	2048	87.7%	(23.1%)
+	4096	64.6%	8192	10.3%average updating time: 11.45ms
+average gaming time  : 197.502ms
+151000	mean = 62642.3	max = 170244
+	64	100%	256	99.9%	512	99.3%	1024	96.8%	2048	85.5%	(21.6%)
+	4096	63.9%	8192	12.1%average updating time: 11.395ms
+average gaming time  : 196.34ms
+152000	mean = 61766.5	max = 157288
+	32	100%	64	99.9%	256	99.8%	512	99.2%	1024	97.2%	2048	86.8%	(22.9%)
+	4096	63.9%	8192	11.2%average updating time: 11.267ms
+average gaming time  : 193.595ms
+153000	mean = 64163	max = 171436
+	256	100%	512	99.5%	1024	98.1%	2048	88.2%	(21.9%)
+	4096	66.3%	8192	13.9%average updating time: 11.596ms
+average gaming time  : 200.329ms
+154000	mean = 61626.2	max = 167412
+	32	100%	128	99.9%	256	99.8%	512	98.8%	1024	97.1%	2048	85.5%	(24.6%)
+	4096	60.9%	8192	13%average updating time: 11.169ms
+average gaming time  : 193.038ms
+155000	mean = 64194	max = 168364
+	128	100%	256	99.9%	512	99.3%	1024	97.5%	2048	87.1%	(21.1%)
+	4096	66%	8192	12.9%average updating time: 11.609ms
+average gaming time  : 199.083ms
+156000	mean = 62037.8	max = 165132
+	32	100%	64	99.9%	256	99.8%	512	98.9%	1024	96.4%	2048	86.3%	(23.1%)
+	4096	63.2%	8192	12.5%average updating time: 11.249ms
+average gaming time  : 193.594ms
+157000	mean = 63290.4	max = 166740
+	64	100%	128	99.9%	256	99.8%	512	99.3%	1024	97.2%	2048	86.1%	(21.4%)
+	4096	64.7%	8192	12%average updating time: 11.438ms
+average gaming time  : 197.044ms
+158000	mean = 62148.4	max = 171716
+	64	100%	256	99.8%	512	99.6%	1024	97.8%	2048	87.6%	(25.2%)
+	4096	62.4%	8192	12.1%average updating time: 11.351ms
+average gaming time  : 194.624ms
+159000	mean = 63224.2	max = 175688
+	64	100%	128	99.8%	256	99.7%	512	99.4%	1024	96.6%	2048	86.3%	(22.8%)
+	4096	63.5%	8192	13.1%average updating time: 11.452ms
+average gaming time  : 197.102ms
+160000	mean = 65224.7	max = 169652
+	256	100%	512	99.3%	1024	97.8%	2048	86.3%	(20.4%)
+	4096	65.9%	8192	14.9%average updating time: 11.753ms
+average gaming time  : 201.563ms
+161000	mean = 62173.6	max = 173552
+	256	100%	512	99.1%	1024	97%	2048	85%	(22%)
+	4096	63%	8192	12.1%average updating time: 11.265ms
+average gaming time  : 194.362ms
+162000	mean = 64017.2	max = 175316
+	64	100%	256	99.9%	512	99.5%	1024	97.9%	2048	88.3%	(22.3%)
+	4096	66%	8192	13.3%average updating time: 11.627ms
+average gaming time  : 199.734ms
+163000	mean = 63408.9	max = 177020
+	64	100%	128	99.9%	256	99.7%	512	99.2%	1024	96.9%	2048	85.4%	(23.3%)
+	4096	62.1%	8192	15.1%average updating time: 11.52ms
+average gaming time  : 197.221ms
+164000	mean = 64018.7	max = 172380
+	64	100%	256	99.9%	512	99.6%	1024	98.1%	2048	86.9%	(22.4%)
+	4096	64.5%	8192	13.8%average updating time: 11.606ms
+average gaming time  : 199.487ms
+165000	mean = 65793.2	max = 158484
+	128	100%	256	99.9%	512	99.3%	1024	97.3%	2048	87.8%	(20.4%)
+	4096	67.4%	8192	15.5%average updating time: 11.836ms
+average gaming time  : 203.394ms
+166000	mean = 65705.9	max = 177428
+	64	100%	128	99.8%	256	99.6%	512	98.8%	1024	96.4%	2048	88%	(21.6%)
+	4096	66.4%	8192	16.3%average updating time: 11.8ms
+average gaming time  : 202.811ms
+167000	mean = 63973.7	max = 169260
+	128	100%	256	99.8%	512	99.3%	1024	97.8%	2048	87.8%	(23.8%)
+	4096	64%	8192	13.9%average updating time: 11.481ms
+average gaming time  : 197.16ms
+168000	mean = 65592.4	max = 175048
+	64	100%	128	99.8%	256	99.7%	512	99.2%	1024	97.3%	2048	87.9%	(20.7%)
+	4096	67.2%	8192	14.3%average updating time: 11.807ms
+average gaming time  : 202.244ms
+169000	mean = 66236	max = 169956
+	256	100%	512	99.2%	1024	97%	2048	86.9%	(18.8%)
+	4096	68.1%	8192	15.8%average updating time: 11.948ms
+average gaming time  : 205.103ms
+170000	mean = 67158.3	max = 172904
+	64	100%	256	99.9%	512	99.3%	1024	97.7%	2048	88.9%	(19.8%)
+	4096	69.1%	8192	15.6%average updating time: 12.046ms
+average gaming time  : 206.219ms
+171000	mean = 66221	max = 168872
+	32	100%	64	99.9%	128	99.8%	256	99.7%	512	99.4%	1024	97.1%	2048	86.5%	(20.7%)
+	4096	65.8%	8192	16.9%average updating time: 11.916ms
+average gaming time  : 204.152ms
+172000	mean = 66531.6	max = 177704
+	32	100%	128	99.9%	256	99.8%	512	99.5%	1024	97.3%	2048	86.7%	(20.4%)
+	4096	66.3%	8192	17.5%average updating time: 11.908ms
+average gaming time  : 204.158ms
+173000	mean = 67353.8	max = 172504
+	32	100%	64	99.9%	256	99.8%	512	99.2%	1024	97.2%	2048	87.8%	(21%)
+	4096	66.8%	8192	18.8%average updating time: 12.024ms
+average gaming time  : 205.954ms
+174000	mean = 67032	max = 171212
+	128	100%	256	99.9%	512	99%	1024	97.8%	2048	87.9%	(20.7%)
+	4096	67.2%	8192	16.8%average updating time: 12.001ms
+average gaming time  : 205.028ms
+175000	mean = 66846.8	max = 170224
+	128	100%	256	99.7%	512	98.8%	1024	97.3%	2048	87.5%	(18.9%)
+	4096	68.6%	8192	16.1%average updating time: 12.017ms
+average gaming time  : 204.666ms
+176000	mean = 68092.4	max = 177700
+	64	100%	256	99.9%	512	99.6%	1024	97.9%	2048	87.4%	(18.4%)
+	4096	69%	8192	17.1%average updating time: 12.178ms
+average gaming time  : 208.277ms
+177000	mean = 70112.8	max = 168580
+	128	100%	256	99.9%	512	99.5%	1024	97.9%	2048	89.1%	(19.8%)
+	4096	69.3%	8192	19.8%average updating time: 12.53ms
+average gaming time  : 214.201ms
+178000	mean = 69041.8	max = 178008
+	128	100%	256	99.9%	512	99.7%	1024	98.5%	2048	88.3%	(18.7%)
+	4096	69.6%	8192	18.9%average updating time: 12.371ms
+average gaming time  : 211.407ms
+179000	mean = 68302	max = 176556
+	256	100%	512	99.5%	1024	98%	2048	87.3%	(17.3%)
+	4096	70%	8192	17.3%average updating time: 12.251ms
+average gaming time  : 209.34ms
+180000	mean = 68703.7	max = 177068
+	32	100%	64	99.9%	128	99.8%	256	99.7%	512	99.1%	1024	97.9%	2048	88.4%	(21.3%)
+	4096	67.1%	8192	19.5%average updating time: 12.271ms
+average gaming time  : 209.835ms
+181000	mean = 71421.9	max = 169864
+	256	100%	512	99.2%	1024	97.2%	2048	87.9%	(17.9%)
+	4096	70%	8192	22.5%average updating time: 12.704ms
+average gaming time  : 215.522ms
+182000	mean = 67830.3	max = 168908
+	32	100%	64	99.9%	128	99.7%	256	99.6%	512	99.1%	1024	96.8%	2048	86.5%	(19.1%)
+	4096	67.4%	8192	18.1%average updating time: 12.163ms
+average gaming time  : 207.151ms
+183000	mean = 69342.9	max = 173328
+	256	100%	512	99.4%	1024	97.1%	2048	88.9%	(19.2%)
+	4096	69.7%	8192	19.8%average updating time: 12.438ms
+average gaming time  : 211.018ms
+184000	mean = 70600.4	max = 182132
+	64	100%	256	99.8%	512	99.7%	1024	98.2%	2048	89.7%	(18%)
+	4096	71.7%	8192	19.7%average updating time: 12.647ms
+average gaming time  : 214.742ms
+185000	mean = 70418.5	max = 174320
+	256	100%	512	99.5%	1024	97.7%	2048	87.7%	(18.1%)
+	4096	69.6%	8192	21.8%average updating time: 12.599ms
+average gaming time  : 213.578ms
+186000	mean = 68620.4	max = 171088
+	256	100%	512	99.1%	1024	97%	2048	87.9%	(20.8%)
+	4096	67.1%	8192	18.4%average updating time: 12.278ms
+average gaming time  : 208.588ms
+187000	mean = 70162.4	max = 173796
+	32	100%	64	99.9%	256	99.7%	512	99.5%	1024	97.6%	2048	87.8%	(19.5%)
+	4096	68.3%	8192	20%average updating time: 12.6ms
+average gaming time  : 213.131ms
+188000	mean = 70676.9	max = 175568
+	128	100%	256	99.9%	512	99.4%	1024	97.4%	2048	88.5%	(19.7%)
+	4096	68.8%	8192	22%average updating time: 12.785ms
+average gaming time  : 216.483ms
+189000	mean = 69247.6	max = 177196
+	64	100%	256	99.9%	512	99.4%	1024	96.4%	2048	85.1%	(16.7%)
+	4096	68.4%	8192	20.3%average updating time: 12.436ms
+average gaming time  : 211.041ms
+190000	mean = 70966.2	max = 175616
+	32	100%	64	99.9%	128	99.8%	256	99.6%	512	99.2%	1024	97.7%	2048	87.9%	(18.9%)
+	4096	69%	8192	21.5%average updating time: 12.737ms
+average gaming time  : 215.496ms
+191000	mean = 69089	max = 176952
+	64	100%	256	99.9%	512	99.5%	1024	97.4%	2048	87.4%	(19.8%)
+	4096	67.6%	8192	19.9%average updating time: 12.333ms
+average gaming time  : 209.532ms
+192000	mean = 69705.2	max = 174896
+	32	100%	64	99.9%	128	99.8%	256	99.6%	512	99.3%	1024	96.8%	2048	87.4%	(18.5%)
+	4096	68.9%	8192	20.5%average updating time: 12.447ms
+average gaming time  : 211.056ms
+193000	mean = 73270	max = 177044
+	32	100%	64	99.9%	128	99.7%	256	99.6%	512	99.1%	1024	97.3%	2048	89.4%	(18.2%)
+	4096	71.2%	8192	24.2%average updating time: 13.09ms
+average gaming time  : 220.739ms
+194000	mean = 69830.2	max = 170724
+	32	100%	64	99.9%	256	99.7%	512	99.5%	1024	97.9%	2048	88.2%	(20.4%)
+	4096	67.8%	8192	20.1%average updating time: 12.522ms
+average gaming time  : 211.753ms
+195000	mean = 71005.6	max = 178392
+	64	100%	128	99.9%	256	99.7%	512	98.9%	1024	97.8%	2048	88.4%	(19.4%)
+	4096	69%	8192	20.7%average updating time: 12.684ms
+average gaming time  : 215.142ms
+196000	mean = 71312	max = 185544
+	128	100%	256	99.9%	512	99.6%	1024	97.1%	2048	86.9%	(18%)
+	4096	68.9%	8192	23.2%average updating time: 12.761ms
+average gaming time  : 215.744ms
+197000	mean = 71534.3	max = 231512
+	256	100%	512	99.6%	1024	97.5%	2048	87.1%	(18.9%)
+	4096	68.2%	8192	23.4%	16384	0.1%average updating time: 12.788ms
+average gaming time  : 216.22ms
+198000	mean = 72442	max = 175136
+	32	100%	64	99.9%	128	99.8%	256	99.6%	512	98.9%	1024	96.8%	2048	87.1%	(17.5%)
+	4096	69.6%	8192	24.6%average updating time: 12.9ms
+average gaming time  : 218.037ms
+199000	mean = 73116.7	max = 176520
+	256	100%	512	99.5%	1024	97.8%	2048	89.8%	(20.3%)
+	4096	69.5%	8192	23.8%average updating time: 13.011ms
+average gaming time  : 219.683ms
+200000	mean = 71906.4	max = 176868
+	128	100%	256	99.8%	512	99.4%	1024	97.3%	2048	87.7%	(18.7%)
+	4096	69%	8192	22.3%average updating time: 12.807ms
+average gaming time  : 216.628ms
+201000	mean = 72696.9	max = 172460
+	32	100%	256	99.8%	512	99.3%	1024	97.2%	2048	87.8%	(18.4%)
+	4096	69.4%	8192	24.4%average updating time: 12.96ms
+average gaming time  : 219.117ms
+202000	mean = 73122.1	max = 180396
+	64	100%	128	99.9%	256	99.7%	512	99.3%	1024	97.2%	2048	88.6%	(17.5%)
+	4096	71.1%	8192	24%average updating time: 12.99ms
+average gaming time  : 219.727ms
+203000	mean = 73495.3	max = 177172
+	128	100%	256	99.8%	512	98.9%	1024	97.6%	2048	88.6%	(18.2%)
+	4096	70.4%	8192	24.2%average updating time: 13.086ms
+average gaming time  : 220.075ms
+204000	mean = 74979.6	max = 177756
+	128	100%	256	99.9%	512	99.3%	1024	97.3%	2048	87.6%	(17.2%)
+	4096	70.4%	8192	26.1%average updating time: 13.232ms
+average gaming time  : 223.297ms
+205000	mean = 72685.4	max = 176812
+	64	100%	128	99.9%	256	99.8%	512	99.1%	1024	96.7%	2048	88.6%	(18.9%)
+	4096	69.7%	8192	23.3%average updating time: 12.888ms
+average gaming time  : 218.139ms
+206000	mean = 70167.9	max = 177268
+	64	100%	256	99.9%	512	98.9%	1024	97%	2048	86.3%	(18.3%)
+	4096	68%	8192	22%average updating time: 12.567ms
+average gaming time  : 211.501ms
+207000	mean = 75227.3	max = 178376
+	256	100%	512	99.3%	1024	97.5%	2048	90.2%	(17.6%)
+	4096	72.6%	8192	24.8%average updating time: 13.579ms
+average gaming time  : 226.427ms
+208000	mean = 72651.5	max = 178268
+	64	100%	128	99.7%	256	99.6%	512	98.9%	1024	97.2%	2048	87.4%	(16.6%)
+	4096	70.8%	8192	23.5%average updating time: 12.962ms
+average gaming time  : 219.245ms
+209000	mean = 74333.3	max = 193604
+	64	100%	128	99.9%	256	99.7%	512	98.6%	1024	97.1%	2048	88.1%	(18.5%)
+	4096	69.6%	8192	25.5%average updating time: 13.226ms
+average gaming time  : 221.869ms
+210000	mean = 73085.5	max = 178696
+	32	100%	64	99.7%	256	99.6%	512	99.4%	1024	97.9%	2048	87.6%	(16.9%)
+	4096	70.7%	8192	24%average updating time: 13.035ms
+average gaming time  : 219.777ms
+211000	mean = 74659.3	max = 182052
+	32	100%	64	99.9%	128	99.8%	256	99.7%	512	99.2%	1024	97.5%	2048	88.5%	(16.8%)
+	4096	71.7%	8192	25.6%average updating time: 13.274ms
+average gaming time  : 223.707ms
+212000	mean = 74508.9	max = 183288
+	32	100%	128	99.9%	256	99.8%	512	99.2%	1024	97.8%	2048	89%	(16.2%)
+	4096	72.8%	8192	22.9%average updating time: 13.339ms
+average gaming time  : 224.256ms
+213000	mean = 73078.3	max = 177028
+	64	100%	128	99.9%	256	99.8%	512	99.4%	1024	98%	2048	88.5%	(16.3%)
+	4096	72.2%	8192	22.2%average updating time: 13.069ms
+average gaming time  : 221.026ms
+214000	mean = 75106	max = 177228
+	64	100%	128	99.9%	256	99.8%	512	99.4%	1024	97.1%	2048	88.9%	(16.9%)
+	4096	72%	8192	25.6%average updating time: 13.357ms
+average gaming time  : 224.722ms
+215000	mean = 75803.7	max = 176960
+	256	100%	512	99.7%	1024	97.5%	2048	89%	(16.5%)
+	4096	72.5%	8192	25.7%average updating time: 13.462ms
+average gaming time  : 226.397ms
+216000	mean = 74721.5	max = 177628
+	128	100%	256	99.9%	512	99.5%	1024	98.1%	2048	88.5%	(18.4%)
+	4096	70.1%	8192	25.2%average updating time: 13.271ms
+average gaming time  : 223.41ms
+217000	mean = 75790.9	max = 267480
+	64	100%	128	99.8%	256	99.5%	512	99%	1024	97.4%	2048	86.9%	(16.1%)
+	4096	70.8%	8192	27.8%	16384	0.1%average updating time: 13.412ms
+average gaming time  : 225.864ms
+218000	mean = 74010.9	max = 200808
+	32	100%	64	99.9%	128	99.7%	256	99.3%	512	98.7%	1024	96.5%	2048	88.5%	(18.3%)
+	4096	70.2%	8192	25.3%average updating time: 13.124ms
+average gaming time  : 220.334ms
+219000	mean = 76791.4	max = 193508
+	64	100%	128	99.9%	256	99.8%	512	99.3%	1024	97.5%	2048	88.8%	(16.9%)
+	4096	71.9%	8192	28.3%average updating time: 13.533ms
+average gaming time  : 228.171ms
+220000	mean = 77084.1	max = 177300
+	32	100%	128	99.9%	256	99.8%	512	99.4%	1024	97.1%	2048	89.2%	(17%)
+	4096	72.2%	8192	27.8%average updating time: 13.613ms
+average gaming time  : 228.572ms
+221000	mean = 76683.9	max = 196420
+	128	100%	256	99.9%	512	99.3%	1024	97.4%	2048	88.8%	(16.3%)
+	4096	72.5%	8192	28.5%average updating time: 13.56ms
+average gaming time  : 227.769ms
+222000	mean = 77802	max = 238012
+	64	100%	128	99.9%	256	99.7%	512	99.2%	1024	97.6%	2048	89.5%	(16.6%)
+	4096	72.9%	8192	29.3%	16384	0.1%average updating time: 13.767ms
+average gaming time  : 231.108ms
+223000	mean = 76136.6	max = 244180
+	32	100%	128	99.9%	256	99.7%	512	99.3%	1024	97.8%	2048	89.9%	(18.7%)
+	4096	71.2%	8192	26.6%	16384	0.1%average updating time: 13.499ms
+average gaming time  : 226.824ms
+224000	mean = 77797.4	max = 182788
+	128	100%	256	99.9%	512	99.7%	1024	98.2%	2048	89.9%	(17.2%)
+	4096	72.7%	8192	28.6%average updating time: 13.763ms
+average gaming time  : 230.945ms
+225000	mean = 78521.2	max = 186676
+	256	100%	512	99.7%	1024	97.4%	2048	89.9%	(16%)
+	4096	73.9%	8192	29.2%average updating time: 13.913ms
+average gaming time  : 233.026ms
+226000	mean = 76766.8	max = 182300
+	32	100%	128	99.9%	256	99.7%	512	99.6%	1024	97.8%	2048	90.1%	(17.9%)
+	4096	72.2%	8192	27.8%average updating time: 13.615ms
+average gaming time  : 228.159ms
+227000	mean = 77141.5	max = 185780
+	64	100%	128	99.9%	256	99.7%	512	99.5%	1024	98.2%	2048	89.9%	(16.2%)
+	4096	73.7%	8192	27.4%average updating time: 13.674ms
+average gaming time  : 229.424ms
+228000	mean = 77761.7	max = 174040
+	64	100%	128	99.9%	256	99.7%	512	99.3%	1024	97.4%	2048	88.6%	(15%)
+	4096	73.6%	8192	28.5%average updating time: 13.735ms
+average gaming time  : 230.53ms
+229000	mean = 77465	max = 183088
+	32	100%	64	99.8%	128	99.7%	256	99.5%	512	98.7%	1024	97.5%	2048	90.6%	(17.9%)
+	4096	72.7%	8192	28.5%average updating time: 13.698ms
+average gaming time  : 228.874ms
+230000	mean = 77056.2	max = 242288
+	64	100%	256	99.9%	512	99.4%	1024	97.6%	2048	89.2%	(18.7%)
+	4096	70.5%	8192	28.3%	16384	0.1%average updating time: 13.602ms
+average gaming time  : 228.34ms
+231000	mean = 74788.9	max = 178272
+	128	100%	256	99.9%	512	99.3%	1024	97.8%	2048	88.9%	(18.2%)
+	4096	70.7%	8192	25.9%average updating time: 13.306ms
+average gaming time  : 222.59ms
+232000	mean = 76620.4	max = 177012
+	64	100%	256	99.9%	512	99.5%	1024	97.9%	2048	89.6%	(15.9%)
+	4096	73.7%	8192	27.9%average updating time: 13.608ms
+average gaming time  : 228.162ms
+233000	mean = 75947.9	max = 226960
+	64	100%	128	99.9%	256	99.7%	512	99.5%	1024	97.1%	2048	87.7%	(16.2%)
+	4096	71.5%	8192	26.7%	16384	0.1%average updating time: 13.526ms
+average gaming time  : 226.251ms
+234000	mean = 74447.6	max = 183652
+	64	100%	128	99.9%	256	99.8%	512	98.8%	1024	96.8%	2048	89.2%	(18.8%)
+	4096	70.4%	8192	25.2%average updating time: 13.199ms
+average gaming time  : 221.622ms
+235000	mean = 81612.9	max = 184388
+	32	100%	128	99.9%	256	99.8%	512	99.5%	1024	98%	2048	91.2%	(17%)
+	4096	74.2%	8192	33.2%average updating time: 14.358ms
+average gaming time  : 239.958ms
+236000	mean = 77966.7	max = 178304
+	64	100%	128	99.8%	256	99.7%	512	98.9%	1024	96.5%	2048	87.9%	(14.9%)
+	4096	73%	8192	28.6%average updating time: 13.744ms
+average gaming time  : 229.797ms
+237000	mean = 81636.1	max = 247836
+	64	100%	256	99.9%	512	99.4%	1024	97.5%	2048	89.9%	(13.6%)
+	4096	76.3%	8192	31.8%	16384	0.2%average updating time: 14.431ms
+average gaming time  : 241.299ms
+238000	mean = 78510.8	max = 182268
+	64	100%	128	99.8%	256	99.7%	512	99.2%	1024	97.7%	2048	88.1%	(15.2%)
+	4096	72.9%	8192	29.2%average updating time: 13.937ms
+average gaming time  : 233.403ms
+239000	mean = 79036.2	max = 178816
+	256	100%	512	99.1%	1024	97.8%	2048	90.2%	(17%)
+	4096	73.2%	8192	29.5%average updating time: 14.001ms
+average gaming time  : 234.669ms
+240000	mean = 79068.3	max = 179056
+	64	100%	256	99.9%	512	99.4%	1024	97.5%	2048	89.8%	(16.9%)
+	4096	72.9%	8192	29.6%average updating time: 14.042ms
+average gaming time  : 234.292ms
+241000	mean = 77389.3	max = 213600
+	256	100%	512	99.6%	1024	98%	2048	88.7%	(16.9%)
+	4096	71.8%	8192	28.2%	16384	0.1%average updating time: 13.708ms
+average gaming time  : 228.863ms
+242000	mean = 78229.9	max = 177332
+	128	100%	256	99.7%	512	99.4%	1024	97.9%	2048	90.6%	(17.7%)
+	4096	72.9%	8192	28.5%average updating time: 13.815ms
+average gaming time  : 230.662ms
+243000	mean = 77585.8	max = 193960
+	128	100%	256	99.7%	512	98.8%	1024	97.3%	2048	88.1%	(16.3%)
+	4096	71.8%	8192	28.2%average updating time: 13.735ms
+average gaming time  : 229.4ms
+244000	mean = 77828.7	max = 191420
+	64	100%	256	99.7%	512	99.3%	1024	97.3%	2048	87.9%	(15.7%)
+	4096	72.2%	8192	29.5%average updating time: 13.736ms
+average gaming time  : 229.68ms
+245000	mean = 79150.6	max = 233928
+	128	100%	256	99.9%	512	99.5%	1024	98.1%	2048	88.7%	(16.1%)
+	4096	72.6%	8192	30.3%	16384	0.1%average updating time: 13.968ms
+average gaming time  : 232.681ms
+246000	mean = 78249.9	max = 176756
+	32	100%	64	99.9%	128	99.8%	256	99.7%	512	99.4%	1024	97.6%	2048	90%	(18.1%)
+	4096	71.9%	8192	28.7%average updating time: 13.923ms
+average gaming time  : 232.437ms
+247000	mean = 77423.8	max = 215388
+	64	100%	128	99.6%	256	99.5%	512	99.3%	1024	97%	2048	89.5%	(16.8%)
+	4096	72.7%	8192	28%	16384	0.1%average updating time: 13.694ms
+average gaming time  : 228.86ms
+248000	mean = 81075.2	max = 233368
+	128	100%	256	99.8%	512	99.3%	1024	97.7%	2048	89.5%	(14.3%)
+	4096	75.2%	8192	29.7%	16384	0.1%average updating time: 14.305ms
+average gaming time  : 238.739ms
+249000	mean = 77364.2	max = 194192
+	128	100%	256	99.7%	512	99.1%	1024	97.3%	2048	88.9%	(18%)
+	4096	70.9%	8192	28.3%average updating time: 13.692ms
+average gaming time  : 228.579ms
+250000	mean = 80660.4	max = 177436
+	256	100%	512	99.7%	1024	98%	2048	90%	(14.6%)
+	4096	75.4%	8192	31.2%average updating time: 14.256ms
+average gaming time  : 238.406ms
+251000	mean = 79599.5	max = 183904
+	128	100%	256	99.9%	512	99.3%	1024	97.4%	2048	90.2%	(17.3%)
+	4096	72.9%	8192	28.9%average updating time: 14.145ms
+average gaming time  : 234.694ms
+252000	mean = 77928.1	max = 221196
+	64	100%	128	99.7%	256	99.5%	512	99%	1024	96.9%	2048	88%	(16.8%)
+	4096	71.2%	8192	28.9%	16384	0.1%average updating time: 14.16ms
+average gaming time  : 232.025ms
+253000	mean = 79561.2	max = 177224
+	128	100%	256	99.9%	512	99%	1024	97.1%	2048	90.7%	(17.3%)
+	4096	73.4%	8192	30%average updating time: 14.129ms
+average gaming time  : 235.099ms
+254000	mean = 79148.9	max = 185260
+	32	100%	128	99.9%	256	99.4%	512	99.3%	1024	97.2%	2048	88.4%	(14.6%)
+	4096	73.8%	8192	28.5%average updating time: 14.148ms
+average gaming time  : 235.404ms
+255000	mean = 80552.9	max = 188572
+	256	100%	512	99.7%	1024	98.7%	2048	89.8%	(15%)
+	4096	74.8%	8192	30.7%average updating time: 14.389ms
+average gaming time  : 239.616ms
+256000	mean = 77632.7	max = 189756
+	128	100%	256	99.9%	512	99.1%	1024	97.1%	2048	89%	(16.1%)
+	4096	72.9%	8192	27%average updating time: 13.934ms
+average gaming time  : 231.983ms
+257000	mean = 76540.5	max = 177896
+	64	100%	128	99.9%	256	99.7%	512	98.9%	1024	96.7%	2048	89.1%	(18.4%)
+	4096	70.7%	8192	26.5%average updating time: 13.688ms
+average gaming time  : 228.112ms
+258000	mean = 77574.8	max = 188660
+	32	100%	64	99.9%	256	99.8%	512	99.1%	1024	97.9%	2048	88.9%	(15.9%)
+	4096	73%	8192	28%average updating time: 13.812ms
+average gaming time  : 230.204ms
+259000	mean = 80766.8	max = 185368
+	128	100%	256	99.9%	512	99.7%	1024	97.9%	2048	90.6%	(16.6%)
+	4096	74%	8192	31.5%average updating time: 14.316ms
+average gaming time  : 238.453ms
+260000	mean = 81016.5	max = 183436
+	64	100%	128	99.8%	256	99.7%	512	99.2%	1024	97.9%	2048	89.7%	(16.8%)
+	4096	72.9%	8192	32%average updating time: 14.339ms
+average gaming time  : 238.642ms
+261000	mean = 83159.2	max = 177400
+	128	100%	256	99.8%	512	99.1%	1024	96.8%	2048	89.8%	(15.9%)
+	4096	73.9%	8192	32.4%average updating time: 14.788ms
+average gaming time  : 245.704ms
+262000	mean = 79626	max = 246380
+	32	100%	64	99.9%	256	99.7%	512	99.4%	1024	97.6%	2048	88.9%	(14.5%)
+	4096	74.4%	8192	29.2%	16384	0.1%average updating time: 14.099ms
+average gaming time  : 234.297ms
+263000	mean = 79778	max = 177384
+	64	100%	128	99.8%	256	99.7%	512	99.4%	1024	97.5%	2048	90.2%	(14.7%)
+	4096	75.5%	8192	29.1%average updating time: 14.155ms
+average gaming time  : 235.4ms
+264000	mean = 81655.6	max = 237436
+	256	100%	512	99.7%	1024	98%	2048	90.7%	(14.9%)
+	4096	75.8%	8192	30.4%	16384	0.2%average updating time: 14.475ms
+average gaming time  : 240.098ms
+265000	mean = 80407.2	max = 198844
+	32	100%	64	99.9%	128	99.8%	256	99.7%	512	99.2%	1024	97.9%	2048	88.9%	(15%)
+	4096	73.9%	8192	31.7%average updating time: 14.091ms
+average gaming time  : 235.357ms
+266000	mean = 81630	max = 184540
+	64	100%	256	99.8%	512	99%	1024	97.1%	2048	88.4%	(13.4%)
+	4096	75%	8192	33%average updating time: 14.395ms
+average gaming time  : 239.63ms
+267000	mean = 83300.1	max = 176992
+	32	100%	64	99.9%	256	99.8%	512	99.4%	1024	98.4%	2048	91.3%	(14.6%)
+	4096	76.7%	8192	32.8%average updating time: 14.669ms
+average gaming time  : 243.911ms
+268000	mean = 84083.1	max = 178140
+	256	100%	512	99.4%	1024	97.5%	2048	90.2%	(14%)
+	4096	76.2%	8192	34.1%average updating time: 14.923ms
+average gaming time  : 247.677ms
+269000	mean = 80947.8	max = 275912
+	64	100%	128	99.7%	256	99.6%	512	99.3%	1024	97.4%	2048	89.5%	(17.9%)
+	4096	71.6%	8192	32.1%	16384	0.1%average updating time: 14.404ms
+average gaming time  : 239.292ms
+270000	mean = 81849.8	max = 198008
+	64	100%	128	99.8%	256	99.7%	512	99.3%	1024	97.2%	2048	89.6%	(16%)
+	4096	73.6%	8192	32.4%average updating time: 14.541ms
+average gaming time  : 240.706ms
+271000	mean = 79690.4	max = 200388
+	64	100%	256	99.9%	512	99.2%	1024	97%	2048	89.1%	(17.4%)
+	4096	71.7%	8192	30.5%average updating time: 14.238ms
+average gaming time  : 236.328ms
+272000	mean = 81376.8	max = 194352
+	64	100%	128	99.8%	256	99.7%	512	99.2%	1024	97.3%	2048	88.7%	(13.9%)
+	4096	74.8%	8192	32.1%average updating time: 14.587ms
+average gaming time  : 241.323ms
+273000	mean = 83720	max = 188148
+	64	100%	128	99.9%	256	99.6%	512	99%	1024	98%	2048	92.3%	(15.2%)
+	4096	77.1%	8192	32%average updating time: 14.922ms
+average gaming time  : 246.725ms
+274000	mean = 82692.3	max = 224596
+	32	100%	64	99.9%	256	99.7%	512	98.8%	1024	96.8%	2048	89.7%	(14.7%)
+	4096	75%	8192	33.3%	16384	0.1%average updating time: 14.545ms
+average gaming time  : 241.836ms
+275000	mean = 77983	max = 192648
+	64	100%	128	99.9%	256	99.8%	512	99.5%	1024	97.6%	2048	86.2%	(16%)
+	4096	70.2%	8192	29.1%average updating time: 13.869ms
+average gaming time  : 231.083ms
+276000	mean = 78848.6	max = 178904
+	64	100%	256	99.9%	512	99.6%	1024	97%	2048	87.8%	(15.4%)
+	4096	72.4%	8192	29.4%average updating time: 13.881ms
+average gaming time  : 231.277ms
+277000	mean = 81711.8	max = 250240
+	64	100%	256	99.9%	512	99.6%	1024	97.6%	2048	90%	(14.5%)
+	4096	75.5%	8192	30.9%	16384	0.1%average updating time: 14.419ms
+average gaming time  : 239.224ms
+278000	mean = 82498.2	max = 181372
+	256	100%	512	99.6%	1024	98.2%	2048	91%	(16.7%)
+	4096	74.3%	8192	32.6%average updating time: 14.52ms
+average gaming time  : 241.529ms
+279000	mean = 83890	max = 191364
+	64	100%	128	99.9%	256	99.7%	512	99.3%	1024	97.7%	2048	90.5%	(16.3%)
+	4096	74.2%	8192	34.1%average updating time: 14.763ms
+average gaming time  : 244.323ms
+280000	mean = 81486	max = 178028
+	128	100%	256	99.9%	512	99.3%	1024	97.4%	2048	89.3%	(15.8%)
+	4096	73.5%	8192	31.6%average updating time: 14.358ms
+average gaming time  : 238.525ms
+281000	mean = 82447.7	max = 188368
+	64	100%	256	99.9%	512	99.6%	1024	97.8%	2048	90%	(16.3%)
+	4096	73.7%	8192	32.7%average updating time: 14.532ms
+average gaming time  : 241.185ms
+282000	mean = 84715.3	max = 192440
+	64	100%	128	99.8%	256	99.7%	512	99.1%	1024	97.9%	2048	90.3%	(15.3%)
+	4096	75%	8192	35.7%average updating time: 14.971ms
+average gaming time  : 246.377ms
+283000	mean = 82570.3	max = 182576
+	64	100%	256	99.9%	512	99.6%	1024	97.7%	2048	89.5%	(15.8%)
+	4096	73.7%	8192	33.7%average updating time: 14.444ms
+average gaming time  : 240.232ms
+284000	mean = 81927.2	max = 185224
+	128	100%	256	99.7%	512	99.2%	1024	97.4%	2048	91.3%	(15.4%)
+	4096	75.9%	8192	31.4%average updating time: 14.415ms
+average gaming time  : 239.028ms
+285000	mean = 84137	max = 177496
+	256	100%	512	99.6%	1024	97.9%	2048	92%	(15.1%)
+	4096	76.9%	8192	32.7%average updating time: 14.864ms
+average gaming time  : 245.918ms
+286000	mean = 83028.7	max = 177940
+	256	100%	512	99.4%	1024	97.8%	2048	91.1%	(14.5%)
+	4096	76.6%	8192	32.5%average updating time: 14.675ms
+average gaming time  : 243.432ms
+287000	mean = 81874.7	max = 178316
+	128	100%	256	99.8%	512	99.5%	1024	98.1%	2048	91.3%	(16.9%)
+	4096	74.4%	8192	29.8%average updating time: 14.531ms
+average gaming time  : 240.8ms
+288000	mean = 84617.4	max = 225820
+	64	100%	128	99.8%	256	99.7%	512	99.6%	1024	97.9%	2048	91%	(15.3%)
+	4096	75.7%	8192	34.9%	16384	0.1%average updating time: 14.926ms
+average gaming time  : 246.859ms
+289000	mean = 85027	max = 245636
+	32	100%	64	99.9%	256	99.8%	512	99.5%	1024	96.9%	2048	90.1%	(13.7%)
+	4096	76.4%	8192	34%	16384	0.3%average updating time: 15.021ms
+average gaming time  : 247.671ms
+290000	mean = 83201.8	max = 186524
+	128	100%	256	99.8%	512	99.3%	1024	97.5%	2048	90%	(14.3%)
+	4096	75.7%	8192	33.2%average updating time: 14.655ms
+average gaming time  : 243.207ms
+291000	mean = 84282.1	max = 236520
+	128	100%	256	99.9%	512	99.6%	1024	97.2%	2048	89.8%	(14%)
+	4096	75.8%	8192	33.1%	16384	0.1%average updating time: 14.878ms
+average gaming time  : 246.58ms
+292000	mean = 82901.1	max = 259508
+	128	100%	256	99.9%	512	99.5%	1024	98.3%	2048	89.1%	(14%)
+	4096	75.1%	8192	32.5%	16384	0.2%average updating time: 14.687ms
+average gaming time  : 242.974ms
+293000	mean = 82209.6	max = 260704
+	64	100%	256	99.9%	512	99.4%	1024	97.6%	2048	89.7%	(16.5%)
+	4096	73.2%	8192	31.9%	16384	0.1%average updating time: 14.558ms
+average gaming time  : 239.905ms
+294000	mean = 80666	max = 177996
+	64	100%	128	99.7%	256	99.4%	512	99.2%	1024	98.3%	2048	89.7%	(18.2%)
+	4096	71.5%	8192	30.9%average updating time: 14.309ms
+average gaming time  : 236.705ms
+295000	mean = 85080.8	max = 263668
+	64	100%	256	99.8%	512	99.7%	1024	98.5%	2048	90.2%	(15%)
+	4096	75.2%	8192	33.7%	16384	0.1%average updating time: 15.174ms
+average gaming time  : 250.397ms
+296000	mean = 82487.3	max = 198900
+	64	100%	256	99.9%	512	99.4%	1024	98%	2048	90%	(16.6%)
+	4096	73.4%	8192	32.6%average updating time: 14.58ms
+average gaming time  : 241.08ms
+297000	mean = 83549.1	max = 197488
+	64	100%	256	99.8%	512	99.3%	1024	97.7%	2048	89.3%	(14.1%)
+	4096	75.2%	8192	34.1%average updating time: 14.791ms
+average gaming time  : 244.167ms
+298000	mean = 83423.5	max = 178256
+	64	100%	256	99.9%	512	99.5%	1024	98.1%	2048	89.7%	(15.7%)
+	4096	74%	8192	34.7%average updating time: 14.729ms
+average gaming time  : 244.107ms
+299000	mean = 83858.9	max = 187760
+	256	100%	512	99.5%	1024	98.6%	2048	91.4%	(17.8%)
+	4096	73.6%	8192	33.2%average updating time: 14.851ms
+average gaming time  : 245.394ms
+300000	mean = 84225.4	max = 221356
+	128	100%	256	99.9%	512	99.3%	1024	98.2%	2048	89.8%	(15.1%)
+	4096	74.7%	8192	33.3%	16384	0.1%average updating time: 14.882ms
+average gaming time  : 245.928ms
