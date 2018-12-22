@@ -618,7 +618,7 @@ public:
 		}
 		return out;
 	}
-private:
+public:
 	board before;
 	board after;
 	int opcode;
@@ -868,13 +868,40 @@ int main(int argc, const char* argv[]) {
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);	// #current process 
 	MPI_Comm_size(MPI_COMM_WORLD, &tasks);	// amount of process
 
+	// define state type for MPI
+	int len[5] ;
+	MPI_Aint base, disps[5] ;
+	MPI_Datatype oldtypes[5], obj_struct, obj_type ;
+	state temp ;
+	MPI_Get_address(&temp, disps) ;
+	MPI_Get_address(&temp.before, disps+1) ;
+	MPI_Get_address(&temp.after, disps+2) ;
+	MPI_Get_address(&temp.opcode, disps+3) ;
+	MPI_Get_address(&temp.score, disps+4) ;
+	MPI_Get_address(&temp.esti, disps+5) ;
+	for ( int i = 0 ; i < 5 ; i++ )
+		len[ i ] = 1 ;
+	base = disps[0] ;
+	for ( int i = 0 ; i < 5 ; i++ )
+		disps[ i ] = MPI_Aint_diff(disps[ i ], base) ;
+	oldtypes[ 0 ] = MPI_UNSIGNED ;
+	oldtypes[ 1 ] = MPI_UNSIGNED ;
+	oldtypes[ 2 ] = MPI_INT ;
+	oldtypes[ 3 ] = MPI_INT ;
+	oldtypes[ 4 ] = MPI_FLOAT ;
+	MPI_Type_create_struct(5, len, disps, oldtypes, &obj_struct) ;
+	MPI_Type_create_resized(obj_struct, 0, sizeof(state), &obj_type) ;
+	MPI_Status status ;
+
 	// train the model
 	std::vector<state> path;
+	std::vector<state> path_receive;
 	path.reserve(20000);
+	path_receive.reserve(20000);
 
 	if(rank==0) {	// master: updating network parameter by returning path from workers
 		do {
-			MPI_Recv(); 	// blocking recv path from workers
+			MPI_Recv(&path_receive[0], 20000, obj_type, 1 ,0, MPI_COMM_WORLD, &status); 	// blocking recv path from workers
 			tdl.update_episode(path, alpha);
 			tdl.make_statistic(n, b, score);
 			
@@ -903,7 +930,7 @@ int main(int argc, const char* argv[]) {
 				}
 			}
 			debug << "end episode" << std::endl;
-			MPI_Send();// returning result path to process 0
+			MPI_Send(&path[0], 20000, obj_type, 0, MPI_COMM_WORLD);// returning result path to process 0
 			// update by TD(0)
 			path.clear();
 		}
