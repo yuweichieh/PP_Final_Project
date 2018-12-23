@@ -14,7 +14,6 @@
  * [3] Oka, Kazuto, and Kiminori Matsuzaki. "Systematic selection of n-tuple networks for 2048."
  * International Conference on Computers and Games. Springer International Publishing, 2016.
  */
-#define __USE_MINGW_ANSI_STDIO 0
 #include <iostream>
 #include <algorithm>
 #include <functional>
@@ -27,7 +26,9 @@
 #include <sstream>
 #include <fstream>
 #include <cmath>
-#include "mpi.h"
+#include <cfloat>
+#include <chrono>
+
 /**
  * output streams
  * to enable debugging (more output), just change the line to 'std::ostream& debug = std::cout;'
@@ -35,6 +36,8 @@
 std::ostream& info = std::cout;
 std::ostream& error = std::cerr;
 std::ostream& debug = *(new std::ofstream);
+//std::ostream& debug = std::cout;
+//std::ofstream //to_file("state_part2.txt", std::ios::out);
 
 /**
  * 64-bit bitboard implementation for 2048
@@ -599,6 +602,7 @@ public:
 	bool is_valid() const {
 		if (std::isnan(esti)) {
 			error << "numeric exception" << std::endl;
+			info << esti << std::endl ;
 			std::exit(1);
 		}
 		return after != before && opcode != -1 && score != -1;
@@ -618,7 +622,7 @@ public:
 		}
 		return out;
 	}
-public:
+private:
 	board before;
 	board after;
 	int opcode;
@@ -689,6 +693,7 @@ public:
 	 *
 	 * you may simply return state() if no valid move
 	 */
+	/*
 	state select_best_move(const board& b) const {
 		state after[4] = { 0, 1, 2, 3 }; // up, right, down, left
 		state* best = after;
@@ -703,7 +708,51 @@ public:
 			debug << "test " << *move;
 		}
 		return *best;
+	}*/
+	/*my version of select_best_move*/
+	state select_best_move(const board& b) const {
+		state after[4] = { 0, 1, 2, 3 }; // up, right, down, left
+		state* best = after;
+		debug << "choosing best move\n" ;
+		for (state* move = after; move != after + 4; move++) {
+			if (move->assign(b)) {	// compute afterstate(s,a)
+				debug << "move\n" << move->after_state() << std::endl ;
+				board rem ;
+				rem = move->after_state() ;	
+				int n0 = 0 ;	// number of zeros
+				for ( int i = 0; i < 16; i++ )	// count number of zero
+					if ( rem.at(i) == 0 )
+						n0++ ;
+				double summing = 0.0 ;
+				for ( int i = 0 ; i < 16 ; i++ ){
+					if ( rem.at(i) != 0 )continue ;
+					board temp;
+					temp = rem ;
+					temp.set(i, 1) ;
+					double e = estimate(temp) ;
+					summing += e * 0.9 / n0 ;
+				}
+				for ( int i = 0 ; i < 16 ; i++ ){
+					if ( rem.at(i) != 0 )continue ;
+					board temp;
+					temp = rem ;
+					temp.set(i, 2) ;
+					double e = estimate(temp) ;
+					summing += e * 0.1 / n0 ;
+				}
+				move->set_value(move->reward() + summing) ;
+				//info << move->reward() << "   #####   " << summing << std::endl ;
+				if (move->value() > best->value())
+					best = move;
+			} else {
+				move->set_value(-std::numeric_limits<float>::max());
+			}
+			debug << "test " << *move;
+		}
+		//info << "###" << best->value() << "\n";
+		return *best;
 	}
+	
 
 	/**
 	 * update the tuple network by an episode
@@ -719,16 +768,30 @@ public:
 	 *  { (s0,s0',a0,r0), (s1,s1',a1,r1), (s2,s2,x,-1) }
 	 *  where (x,x,x,x) means (before state, after state, action, reward)
 	 */
+	/*
 	void update_episode(std::vector<state>& path, float alpha = 0.1) const {
 		float exact = 0;
-		for (path.pop_back() /* terminal state */; path.size(); path.pop_back()) {
+		for (path.pop_back(); path.size(); path.pop_back()) {
 			state& move = path.back();
 			float error = exact - (move.value() - move.reward());
 			debug << "update error = " << error << " for after state" << std::endl << move.after_state();
 			exact = move.reward() + update(move.after_state(), alpha * error);
 		}
 	}
-
+	*/
+	/*my version of update_episode*/
+	void update_episode(std::vector<state>& path, float alpha = 0.1) const {
+		float exact = 0;
+		for (path.pop_back(); path.size(); path.pop_back()) {
+			state& move = path.back();
+			float error = exact - (estimate(move.before_state()) - move.reward());
+			//info << exact << "\t" << move.value() << "\t" << move.reward() << std::endl ;
+			debug << "update error = " << error << " for after state" << std::endl << move.before_state();
+			double u = update(move.before_state(), alpha * error);
+			//info << u << std::endl;
+			exact = move.reward() + u;
+		}
+	}
 	/**
 	 * update the statistic, and display the status once in 1000 episodes by default
 	 *
@@ -776,6 +839,8 @@ public:
 				if (stat[t] == 0) continue;
 				int accu = std::accumulate(stat + t, stat + 16, 0);
 				info << "\t" << ((1 << t) & -2u) << "\t" << (accu * coef) << "%";
+				if ( ((1 << t) & -2u) == 2048 )
+					//to_file << n << " " << (accu * coef ) << std::endl ;
 				info << "\t(" << (stat[t] * coef) << "%)" << std::endl;
 			}
 			scores.clear();
@@ -827,7 +892,7 @@ public:
 			out.write(reinterpret_cast<char*>(&size), sizeof(size));
 			for (feature* feat : feats) {
 				out << *feat;
-				info << feat->name() << " is saved to " << path << std::endl;
+				//info << feat->name() << " is saved to " << path << std::endl;
 			}
 			out.flush();
 			out.close();
@@ -841,13 +906,16 @@ private:
 };
 
 int main(int argc, const char* argv[]) {
+	auto total_time = 0.0;
+	auto total_time_game = 0.0;
+	//INIT_TIMER
+    
 	info << "TDL2048-Demo" << std::endl;
 	learning tdl;
-	
+
 	// set the learning parameters
 	float alpha = 0.1;
 	size_t total = 100000;
-	size_t game_count = 0;
 	unsigned seed;
 	__asm__ __volatile__ ("rdtsc" : "=a" (seed));
 	info << "alpha = " << alpha << std::endl;
@@ -862,81 +930,57 @@ int main(int argc, const char* argv[]) {
 	tdl.add_feature(new pattern({ 4, 5, 6, 8, 9, 10 }));
 
 	// restore the model from file
-	tdl.load("");
-	// MPI setup
-	MPI_Init(&argc, &argv);
-	MPI_Comm_rank(MPI_COMM_WORLD, &rank);	// #current process 
-	MPI_Comm_size(MPI_COMM_WORLD, &tasks);	// amount of process
-
-	// define state type for MPI
-	int len[5] ;
-	MPI_Aint base, disps[5] ;
-	MPI_Datatype oldtypes[5], obj_struct, obj_type ;
-	state temp ;
-	MPI_Get_address(&temp, disps) ;
-	MPI_Get_address(&temp.before, disps+1) ;
-	MPI_Get_address(&temp.after, disps+2) ;
-	MPI_Get_address(&temp.opcode, disps+3) ;
-	MPI_Get_address(&temp.score, disps+4) ;
-	MPI_Get_address(&temp.esti, disps+5) ;
-	for ( int i = 0 ; i < 5 ; i++ )
-		len[ i ] = 1 ;
-	base = disps[0] ;
-	for ( int i = 0 ; i < 5 ; i++ )
-		disps[ i ] = MPI_Aint_diff(disps[ i ], base) ;
-	oldtypes[ 0 ] = MPI_UNSIGNED ;
-	oldtypes[ 1 ] = MPI_UNSIGNED ;
-	oldtypes[ 2 ] = MPI_INT ;
-	oldtypes[ 3 ] = MPI_INT ;
-	oldtypes[ 4 ] = MPI_FLOAT ;
-	MPI_Type_create_struct(5, len, disps, oldtypes, &obj_struct) ;
-	MPI_Type_create_resized(obj_struct, 0, sizeof(state), &obj_type) ;
-	MPI_Status status ;
+	tdl.load("model.out");
 
 	// train the model
 	std::vector<state> path;
-	std::vector<state> path_receive;
 	path.reserve(20000);
-	path_receive.reserve(20000);
+	for (size_t n = 1; n <= total; n++) {
+		//info << n << std::endl ;
+		board b;
+		int score = 0;
 
-	if(rank==0) {	// master: updating network parameter by returning path from workers
-		do {
-			MPI_Recv(&path_receive[0], 20000, obj_type, 1 ,0, MPI_COMM_WORLD, &status); 	// blocking recv path from workers
-			tdl.update_episode(path, alpha);
-			tdl.make_statistic(n, b, score);
-			
-		} while(game_count<total);
-	}
-	else {
-		for (size_t n = 1+rank-1; n <= total; n+=(tasks-1)) {
-			board b;
-			int score = 0;
+		// play an episode
+		debug << "begin episode" << std::endl;
+		b.init();
+		auto started_game = std::chrono::high_resolution_clock::now();
+		while (true) {
+			debug << "state" << std::endl << b;
+			state best = tdl.select_best_move(b);
+			path.push_back(best);
 
-			// play an episode
-			debug << "begin episode" << std::endl;
-			b.init();
-			while (true) {
-				debug << "state" << std::endl << b;
-				state best = tdl.select_best_move(b);
-				path.push_back(best);
-
-				if (best.is_valid()) {
-					debug << "best " << best;
-					score += best.reward();
-					b = best.after_state();
-					b.popup();
-				} else {
-					break;
-				}
+			if (best.is_valid()) {
+				debug << "best " << best;
+				score += best.reward();
+				b = best.after_state();
+				b.popup();
+			} else {
+				break;
 			}
-			debug << "end episode" << std::endl;
-			MPI_Send(&path[0], 20000, obj_type, 0, MPI_COMM_WORLD);// returning result path to process 0
-			// update by TD(0)
-			path.clear();
+		}
+		auto done_game = std::chrono::high_resolution_clock::now();
+		total_time_game += std::chrono::duration_cast<std::chrono::milliseconds>(done_game-started_game).count() ;
+		debug << "end episode" << std::endl;
+
+		// update by TD(0)
+		//START_TIMER
+		auto started = std::chrono::high_resolution_clock::now();
+		tdl.update_episode(path, alpha);
+		auto done = std::chrono::high_resolution_clock::now();
+		total_time += std::chrono::duration_cast<std::chrono::milliseconds>(done-started).count() ;
+		//STOP_TIMER("finish update episode")
+		tdl.make_statistic(n, b, score);
+		path.clear();
+		if ( n % 1000 == 0 ){
+			std::cout << "average updating time: " << total_time / 1000.0 << "ms" << std::endl ;
+			std::cout << "average gaming time  : " << total_time_game / 1000.0 << "ms" << std::endl ;
+			total_time = 0.0 ;
+			total_time_game = 0.0 ;
+			tdl.save("model.out");
 		}
 	}
+
 	// store the model into file
-	tdl.save("");
 
 	return 0;
 }

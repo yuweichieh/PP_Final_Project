@@ -1,4 +1,8 @@
 # PP_Final_Project
+## Version note:
+- 1223_2048.cpp: With bug-> recv_len = 0. 
+- 1224_2048.cpp: Current one that fix 1223's bug with a poor way
+
 ### 20181223
 - The detail about our MPI_datatype of ```class state```:
 ```
