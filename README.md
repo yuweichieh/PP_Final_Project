@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PP_Final_Project
 ## Version note:
 - 1223_2048.cpp: With bug-> recv_len = 0. 
