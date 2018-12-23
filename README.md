@@ -1,4 +1,6 @@
 # PP_Final_Project
+### 20181224
+- We notice that using MPI_Send and MPI_Recv to transmit a c++ vector will cause some bugs that receiver will receive the data, but it won't put them into its vector. So the ```vector.size()``` will be ```0```, and will cause ```update_episode``` segmant fault. Hence, we use array at receiver to receive data, and ```push_back()``` to its vector to solve the problem.
 ### 20181223
 - The detail about our MPI_datatype of ```class state```:
 ```
