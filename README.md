@@ -13,8 +13,9 @@ int opcode, score ;
 double esti ;
 
 /*
-* We found that we need to exchange before and after, esti need to use double as well, or there will be some bugs when send & receive.
-*/
+ *We found that we need to exchange before and after, esti need to use double as well, 
+ *or there will be some bugs when send & receive.
+ */
 ```
 ### 20181219
 - Upload 300k games output file
