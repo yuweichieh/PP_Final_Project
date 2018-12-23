@@ -25,7 +25,8 @@ double esti ;
 ### 20181215
 - MPI_Datatype testfile test.c upload WCYu
 - MPI vector&array testing pass test.cpp CHYu
-	- using mpicxx to compile
+	- using mpicxx <filename.cpp> to compile
+	- using mpirun -np <n> ./<filename> to run
 - Update original 2048.cpp
 	- use timer to calculate average time cost by gaming and updating network
 	![](https://i.imgur.com/No4K2kg.png)
