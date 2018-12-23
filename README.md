@@ -2,12 +2,12 @@
 ### 20181223
 - The detail about our MPI_datatype of ```class state```:
 ```
-## in state class:
+// in state class:
 board before, after ;
 int opcode, score ;
 float esti ;
 
-## in our MPI_datatype:
+// in our MPI_datatype:
 uint64_t after, before ;
 int opcode, score ;
 double esti ;
